@@ -1,0 +1,45 @@
+# Python / Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+.conda/
+conda-env/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Logs / Temp
+*.log
+tmp/
+temp/
+*.tmp
+
+# Data
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.parquet
+*.pkl
+*.pickle
+
+# Figures (KEEP tracked)
+figures/tmp/
+figures/temp/
+figures/.ipynb_checkpoints/
