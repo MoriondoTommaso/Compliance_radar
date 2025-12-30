@@ -18,8 +18,9 @@ Using the *org_compliance_data.db* dataset, which brings together operational, a
 the analysis aims to highlight departments that may be more exposed to compliance challenges and to characterize the organisational conditions
 associated with such risks.
 
-Formulated as a binary classification task with $\texttt{is\_at\_risk} \in \{0, 1\}$, the model achieves evidence-based insights intended
+Formulated as a binary classification task with `is_at_risk` ∈ {0, 1}, the model achieves evidence-based insights intended
 to strengthen internal accountability and support ethical, informed decision-making across the organisation.
+
 
 
 # **[Section 2] Methods**
@@ -50,7 +51,7 @@ The exploratory phase examines:
 
 
 ### Figure 1 -- Correlation with the Target Variable
-Below we report the Pearson correlations between each numerical feature and the target $\texttt{is\_at\_risk}$.
+Below we report the Pearson correlations between each numerical feature and the target `is_at_risk`.
 ![Correlation with is_at_risk](figures/feature_correlations_with_target.png)
 Strong negative correlations correspond to audit-related leakage, later removed from the modelling pipeline.
 
@@ -338,8 +339,8 @@ Interpretation:
 - However, coefficient inspection shows that **many of the strongest drivers are missingness flags**, indicating that the model is exploiting **monitoring intensity / documentation patterns** in addition to substantive risk drivers.
 
  
-![ROC curve](`figures/baseline_logreg_roc_test.png`)
-![Confusion matrix](`figures/baseline_logreg_confusion_matrix_test.png`)
+![figures/baseline_logreg_roc_test](`figures/baseline_logreg_roc_test.png`)
+![baseline_logreg_confusion_matrix_test](`figures/baseline_logreg_confusion_matrix_test.png`)
 
 ---
 
@@ -420,7 +421,7 @@ Interpretation:
 1. **Risk prediction is feasible with strong performance.**  
    A simple, regularised Logistic Regression achieves high test discrimination (**AUC ≈ 0.90**) on the reduced feature set.
 
-![Model comparison](`figures/compare_metrics_bar_log_vs_xgb.png`)
+![Model_comparison](`figures/compare_metrics_bar_log_vs_xgb.png`)
 
 2. **Missingness contains operational signal and is not random.**  
    Missingness patterns are strongly associated with the target and can dominate linear model coefficients, indicating that predictive performance can partially depend on *how data is collected*.
