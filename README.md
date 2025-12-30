@@ -207,9 +207,6 @@ In VS Code, open `main.ipynb` and select the kernel:
 Once the kernel is selected, run **`main.ipynb`** from top to bottom to reproduce all analyses, figures, and models.
 
 
-### Figure 3 -- Pipeline Flowchart
-![Pipeline Flowchart](images/pipeline_flowchart.png)
-A schematic representation of preprocessing, feature engineering, cross-validation and model selection.
 
 
 # **[Section 3] Experimental Design**
@@ -341,8 +338,8 @@ Interpretation:
 - However, coefficient inspection shows that **many of the strongest drivers are missingness flags**, indicating that the model is exploiting **monitoring intensity / documentation patterns** in addition to substantive risk drivers.
 
  
-> - ROC curve: `figures/baseline_logreg_roc_test.png`  
-> - Confusion matrix: `figures/baseline_logreg_confusion_matrix_test.png`
+![ROC curve](`figures/baseline_logreg_roc_test.png`)
+![Confusion matrix](`figures/baseline_logreg_confusion_matrix_test.png`)
 
 ---
 
@@ -423,7 +420,7 @@ Interpretation:
 1. **Risk prediction is feasible with strong performance.**  
    A simple, regularised Logistic Regression achieves high test discrimination (**AUC ≈ 0.90**) on the reduced feature set.
 
-> - Model comparison: `figures/compare_metrics_bar_log_vs_xgb.png`  
+![Model comparison](`figures/compare_metrics_bar_log_vs_xgb.png`)
 
 2. **Missingness contains operational signal and is not random.**  
    Missingness patterns are strongly associated with the target and can dominate linear model coefficients, indicating that predictive performance can partially depend on *how data is collected*.
